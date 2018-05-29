@@ -20,22 +20,22 @@ int main()
 
   float d = 3;
   float e = 9;
-  float g;
+ 
 
-  int* ptrtod = &d;
-  int* ptrtoe = &e;
+  float* ptrtod = &d;
+  float* ptrtoe = &e;
 
-  printf("The value of d is %d\n", d);
-  printf("The value of e is %d\n", e);
+  printf("The value of d is %f\n", d);
+  printf("The value of e is %f\n", e);
 
-  printf("The address of d is %d\n", &d);
-  printf("The address of e is %d\n", &e);
+  printf("The address of d is %f\n", &d);
+  printf("The address of e is %f\n", &e);
 
   *ptrtoa = *ptrtod;
   *ptrtod = *ptrtoe;
   *ptrtoe = *ptrtoa;
 
-  printf("The value of d is %d\n", d);
-  printf("The value of e is %d\n", e);
+  printf("The value of d is %f\n", d);
+  printf("The value of e is %f\n", e);
 
 }
